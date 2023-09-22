@@ -35,21 +35,22 @@ p {
 }
 ul{
   list-style: none;
-}
-.navi{
-  /*background-color: purple;*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   
 }
+.navi{
+  background-color: purple;
+  flex-direction: row;
+  display: flex;
+  
+}
+
 .navi img{
   width: 7%;
 }
 
 
 
-.navigation ul li:hover{
+.navi ul li:hover{
   background-color: green;
 }
 #homeBody{
