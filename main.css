@@ -39,10 +39,18 @@ ul{
 }
 .navi{
   background-color: purple;
-  flex-direction: row;
   display: flex;
   
 }
+.navi ul{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  margin-left: auto;
+  width: 15%;
+}
+
 
 .navi img{
   width: 7%;
