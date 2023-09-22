@@ -37,7 +37,8 @@ ul{
   list-style: none;
 }
 body div{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
 }
 
 
@@ -74,7 +75,7 @@ body div{
   text-align: center;
   background-color: lightgrey;
   align-content: stretch;
-  bottom: 0;
+  width: 100%;
   
 }
 #homeBody img{
@@ -84,10 +85,8 @@ body div{
   background-color: lightblue;
 }
 #footer{
-  display: flex;
+  
   justify-content: center;
   background-color: darkgrey;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
