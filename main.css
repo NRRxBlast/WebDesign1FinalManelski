@@ -41,7 +41,10 @@ body div{
   grid-template-columns: repeat(6, auto);
 }
 
+.navi{
+  display: flex;
 
+}
 .navi ul{
   display: flex;
   flex-direction: row;
@@ -70,7 +73,7 @@ body div{
 
 }
 #homeBody{
-  
+  display: flex;
   flex-direction: column;
   text-align: center;
   background-color: lightgrey;
@@ -85,7 +88,8 @@ body div{
   background-color: lightblue;
 }
 #footer{
-  
+  grid-column: 1 / span 6;
+  grid-row: 6;
   justify-content: center;
   background-color: darkgrey;
   width: 100%;
