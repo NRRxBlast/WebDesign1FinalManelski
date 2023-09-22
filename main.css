@@ -38,28 +38,36 @@ ul{
   
 }
 .navi{
-  background-color: purple;
+  
   display: flex;
   
 }
 .navi ul{
   display: flex;
   flex-direction: row;
-  
-  align-items: center;
+  justify-content: space-around;
+  align-self: center;
   margin-left: auto;
-  width: 15%;
+  width: 30%;
 }
 
 
 .navi img{
   width: 7%;
+  margin: 0 2vh 0 0;
 }
 
-
+.navi ul li{
+  text-align: center;
+  width: 33.33%;
+  font-size: 3vh;
+  
+  
+}
 
 .navi ul li:hover{
   background-color: green;
+
 }
 #homeBody{
   text-align: center;
