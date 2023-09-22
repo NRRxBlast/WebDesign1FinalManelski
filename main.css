@@ -36,10 +36,7 @@ p {
 ul{
   list-style: none;
 }
-body div{
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-}
+
 
 .navi{
   display: flex;
@@ -88,9 +85,11 @@ body div{
   background-color: lightblue;
 }
 #footer{
-  grid-column: 1 / span 6;
-  grid-row: 6;
+ 
+  display: flex;
+  margin-top: auto;
   justify-content: center;
+  
   background-color: darkgrey;
   width: 100%;
 }
