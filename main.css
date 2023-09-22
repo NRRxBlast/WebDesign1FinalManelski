@@ -37,10 +37,12 @@ ul{
   list-style: none;
   
 }
+body{
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
 .navi{
-  
   display: flex;
-  
 }
 .navi ul{
   display: flex;
@@ -70,5 +72,13 @@ ul{
 
 }
 #homeBody{
+  
   text-align: center;
+  background-color: lightgrey;
+  height: 100%;
+}
+#homeBody img{
+  width: 50%;
+  height: 10vh;
+  background-color: lightblue;
 }
