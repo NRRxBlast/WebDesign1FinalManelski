@@ -36,11 +36,11 @@ p {
 ul{
   list-style: none;
 }
-
-.navi{
+body div{
   display: flex;
-  height: 30%;
 }
+
+
 .navi ul{
   display: flex;
   flex-direction: row;
@@ -69,11 +69,13 @@ ul{
 
 }
 #homeBody{
-  display: flex;
+  
   flex-direction: column;
   text-align: center;
   background-color: lightgrey;
-  height: 50%;
+  align-content: stretch;
+  bottom: 0;
+  
 }
 #homeBody img{
   width: 50%;
@@ -85,6 +87,7 @@ ul{
   display: flex;
   justify-content: center;
   background-color: darkgrey;
-  height: 10%;
-  margin-bottom: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
