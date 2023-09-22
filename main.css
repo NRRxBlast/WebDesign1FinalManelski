@@ -33,25 +33,24 @@ p {
 	font-size: 1em;
 	line-height: 1.5;
 }
-.navigation{
-  width: 100%;
+ul{
+  list-style: none;
+}
+.navi{
+  /*background-color: purple;*/
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   
 }
-.navigation img{
+.navi img{
   width: 7%;
 }
 
-.navigation ul{
-  list-style: none;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-content: right;
-  
-}
-.navigation ul li{
-  on-hover: 
+
+
+.navigation ul li:hover{
+  background-color: green;
 }
 #homeBody{
   text-align: center;
