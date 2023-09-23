@@ -38,7 +38,7 @@ ul{
 }
 body{
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
 }
 header{
   grid-column: 1 / span 3;
@@ -76,7 +76,7 @@ header{
 }
 main{
   grid-column: 1/ span 3;
-  grid-row: 2/span 3;
+  grid-row: 2/ span 2;
 }
 #homeBody{
   display: flex;
@@ -94,8 +94,8 @@ main{
   background-color: lightblue;
 }
 footer{
-  grid-column: 1;
-  grid-row: 3 /  span 6;
+  grid-column: 1 / span 3;
+  grid-row: 6;
   
 }
 #footer{
