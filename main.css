@@ -62,8 +62,9 @@ header{
 
 .navi ul li{
   text-align: center;
-  width: 100%;
   font-size: 3vh;
+  display: flex;
+  flex-direction: column;
  
   
 }
