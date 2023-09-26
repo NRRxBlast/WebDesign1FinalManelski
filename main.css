@@ -33,9 +33,7 @@ p {
 	font-size: 1.5vw;
 	line-height: 1.5;
 }
-ul{
-  list-style: none;
-}
+
 body{
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -47,14 +45,13 @@ header{
 .navi{
   display: flex;
   
+  
 }
 .navi ul{
+  list-style: none;
+  color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: center;
-  margin-left: auto;
-  width: 30%;
+  align-content: center;
 }
 
 
@@ -65,11 +62,9 @@ header{
 
 .navi ul li{
   text-align: center;
-  width: 33.33%;
-  height: 100%;
+  width: 100%;
   font-size: 3vh;
-  padding-top: 50%;
-  padding-bottom: 50%;
+ 
   
 }
 
