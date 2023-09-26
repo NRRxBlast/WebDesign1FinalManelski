@@ -38,10 +38,11 @@ ul{
 }
 body{
   display: grid;
-  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(3, auto);
 }
 header{
-  grid-column: 1 / span 3;
+  grid-column: 1 / 4;
+  background-color: pink;
 }
 .navi{
   display: flex;
@@ -65,8 +66,10 @@ header{
 .navi ul li{
   text-align: center;
   width: 33.33%;
+  height: 100%;
   font-size: 3vh;
-  
+  padding-top: 50%;
+  padding-bottom: 50%;
   
 }
 
