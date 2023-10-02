@@ -43,22 +43,26 @@ header{
   background-color: pink;
   
 }
-.navi{
+#navi{
+  display: flex;
+  flex-direction: row;
+  
+}
+#innerNav ul{
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  background-color: purple;
+  width: 25vw;
+}
+#innerNav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   
-  
-  
-}
-.navi ul{
-  list-style: none;
-  color: white;
-  display: flex;
-  align-content: center;
-  justify-items: space-between;
-  background-color: purple;
+  width: 100%;
 }
 
 
@@ -67,22 +71,29 @@ header{
   
 }
 
-.navi ul li{
+#innerNav ul li{
   text-align: center;
   font-size: 3vh;
   display: flex;
   flex-direction: column;
- 
-  
 }
 
-.navi ul li:hover{
+#innerNav ul li:nth-child(1):hover{
   background-color: green;
 
 }
+#innerNav ul li:nth-child(2):hover{
+  background-color: blue;
+
+}
+#innerNav ul li:nth-child(3):hover{
+  background-color: red;
+
+}
 main{
-  grid-column: 1/ span 3;
-  grid-row: 2/ span 2;
+  grid-column: 1/ span 12;
+  grid-row: 2;
+  min-height: 100vh;
 }
 #homeBody{
   display: flex;
@@ -100,8 +111,8 @@ main{
   background-color: lightblue;
 }
 footer{
-  grid-column: 1 / span 3;
-  grid-row: 6;
+  grid-column: 1 / span 12;
+  grid-row: 3;
   
 }
 #footer{
