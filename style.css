@@ -36,14 +36,19 @@ p {
 
 body{
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(12, auto);
 }
 header{
-  grid-column: 1 / 4;
+  grid-column: 1 / span 12;
   background-color: pink;
+  
 }
 .navi{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
   
   
 }
@@ -52,12 +57,14 @@ header{
   color: white;
   display: flex;
   align-content: center;
+  justify-items: space-between;
+  background-color: purple;
 }
 
 
-.navi img{
-  width: 7%;
-  margin: 0 2vh 0 0;
+#logo{
+  width: 15vh;
+  
 }
 
 .navi ul li{
