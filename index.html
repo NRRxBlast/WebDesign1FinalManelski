@@ -44,9 +44,9 @@
           <h3>Cubing Teacher</h3>
 
           <ul>
-            <li onclick="homePage();">Home</li>
-            <li>Content</li>
-            <li>FAQ</li>
+            <li onclick="homePage()">Home</li>
+            <li><a href="content.html">Content</a></li>
+            <li onclick="faqPage()">FAQ</li>
           </ul>
         </div>
       </div>
@@ -71,7 +71,16 @@
     </footer>
   </body>
   <script>
-  
+    homePage(){
+      window.location.href="index.html";
+    }
+    contentPage(){
+      window.location.href="content.html";
+      alert("clicked");
+    }
+    faqPage(){
+      window.location.href="faq.html";
+    }
   </script>
   
 </html>
