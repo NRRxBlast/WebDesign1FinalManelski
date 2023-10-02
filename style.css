@@ -113,11 +113,17 @@ main{
   align-self: center;
   background-color: lightblue;
 }
-
+nav{
+  grid-column: 3;
+  grid-row: 2;
+}
 #contentNav{
   background-color: blue;
-  grid-column: 2;
-  grid-row: 2/ span 10;
+  
+  
+}
+#contentNav ul{
+  list-style:none;
 }
 #contentBody{
   background-color: green;
