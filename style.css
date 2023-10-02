@@ -69,13 +69,10 @@ header{
   
   width: 100%;
 }
-
-
 #logo{
   width: 15vh;
   
 }
-
 #innerNav ul li{
   text-align: center;
   font-size: 3vh;
@@ -115,6 +112,16 @@ main{
   height: 10vh;
   align-self: center;
   background-color: lightblue;
+}
+
+#contentNav{
+  background-color: blue;
+  grid-column: 2;
+  grid-row: 2/ span 10;
+}
+#contentBody{
+  background-color: green;
+  
 }
 footer{
   grid-column: 1 / span 12;
