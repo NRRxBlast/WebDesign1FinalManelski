@@ -93,30 +93,10 @@ header{
   background-color: red;
 
 }
-.indexMain{
-  grid-column: 1/ span 12;
-  grid-row: 2;
-  min-height: 100vh;
-}
-#homeBody{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: lightgrey;
-  align-content: stretch;
-  width: 100%;
-  
-}
-#homeBody img{
-  width: 50%;
-  height: 10vh;
-  align-self: center;
-  background-color: lightblue;
-}
 
 #contentNav{
   background-color: blue;
-  
+  grid-column: 1 / span 4;
   min-height: 75vh;
   
   
@@ -124,12 +104,9 @@ header{
 #contentNav ul{
   list-style:none;
 }
-.contentBody{
-  display: grid;
-  grid-template-columns: repeat(12, auto);
-}
+
 #contentMain{
-  grid-column: / span 8;
+  grid-column: 8;
   text-align: center;
   background-color: green;
   min-height: 75vh;
