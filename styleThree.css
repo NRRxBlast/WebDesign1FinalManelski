@@ -39,10 +39,7 @@ a{
   color: black;
   text-decoration: none;
 }
-body{
-  display: grid;
-  grid-template-columns: repeat(12, auto);
-}
+
 header{
   grid-column: 1 / span 12;
   background-color: pink;
@@ -92,40 +89,6 @@ header{
 #innerNav ul li:nth-child(3):hover{
   color: red;
 
-}
-
-#contentNav{
-  background-color: blue;
-  display: flex;
-  
-  min-height: 75vh;
-  
-}
-#contentNav ul{
-  list-style:none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: -3vh;
-  margin-right: 3vh;
-  line-height: 10vh
-}
-.navigation{
-  grid-column: 1 / span 3;
-}
-.content{
-  grid-column: 4/ span 9;
-}
-#contentMain{
-  display: flex;
-  flex-direction: column;
-  
-  
-  text-align: center;
-  background-color: green;
-  
-  
-  
 }
 
 #faqNav{
