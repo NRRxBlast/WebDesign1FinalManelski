@@ -139,7 +139,8 @@ header{
 #faqBody{
   display: flex;
   flex-direction: column;
-  
+  background-color: yellow;
+  grid-column: 4 / span 6;
 }
 
 footer{
