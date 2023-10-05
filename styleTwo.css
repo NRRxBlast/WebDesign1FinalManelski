@@ -132,15 +132,16 @@ header{
   background-color: purple;
   display: flex;
   flex-direction: column;
-  grid-column: 1 / span 3;
+  
 
 }
 
 #faqBody{
+  
   display: flex;
   flex-direction: column;
   background-color: yellow;
-  grid-column: 4 / span 6;
+ 
 }
 
 footer{
