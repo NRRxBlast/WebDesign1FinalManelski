@@ -44,7 +44,7 @@ body{
   grid-template-columns: repeat(12, auto);
 }
 header{
-  grid-column: 1 / span 12;
+  grid-columns: 1 / span 12;
   background-color: pink;
   
 }
@@ -96,7 +96,7 @@ header{
 
 #contentNav{
   background-color: blue;
-  grid-column: 1 / span 4;
+  display: flex;
   min-height: 75vh;
   
   
@@ -106,10 +106,13 @@ header{
 }
 
 #contentMain{
+  display: flex;
+  flex-direction: column;
   grid-column: 5;
   text-align: center;
   background-color: green;
- 
+  
+  
   
 }
 
