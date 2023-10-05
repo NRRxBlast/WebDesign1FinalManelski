@@ -82,15 +82,15 @@ header{
 }
 
 #innerNav ul li:nth-child(1):hover{
-  background-color: green;
+  color: green;
 
 }
 #innerNav ul li:nth-child(2):hover{
-  background-color: blue;
+  color: blue;
 
 }
 #innerNav ul li:nth-child(3):hover{
-  background-color: red;
+  color: red;
 
 }
 
@@ -106,7 +106,8 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content:
+  margin-left: -3vh;
+  margin-right: 3vh;
   line-height: 10vh
 }
 .navigation{
