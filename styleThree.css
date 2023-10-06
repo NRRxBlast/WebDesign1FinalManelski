@@ -91,18 +91,19 @@ header{
 }
 
 #faqNav{
-  background-color: purple;
-  display: flex;
+  background-color: orange;
   width: 25%;
   float: left;
-  justify-: space-around;
-  align-content: center
+  height: 500px;
 }
+
 #faqList ul{
-  list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color: purple;
+  list-style-type: none;
+  height: 450px;
+  justify-content: space-around;
 }
 
 #faqBody{
