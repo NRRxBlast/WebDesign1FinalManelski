@@ -40,6 +40,7 @@ a{
   text-decoration: none;
 }
 
+
 header{
   background-color: pink;
   
@@ -92,9 +93,9 @@ header{
 
 #faqNav{
   background-color: orange;
-  width: 24%;
+  width: 20vh;
   float: left;
-  height: 40em;
+  height: 100%;
   border-right: .5em solid lightgrey;
 }
 
@@ -103,10 +104,11 @@ header{
   flex-direction: column;
   background-color: purple;
   list-style-type: none;
-  height: 450px;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   line-height: 10vh;
+  overflow: hidden;
 }
 
 #faqBody{
@@ -119,11 +121,7 @@ header{
  
 }
 
-footer{
-  grid-column: 1 / span 12;
-  grid-row: 3;
-  
-}
+
 #footer{
  
   display: flex;
