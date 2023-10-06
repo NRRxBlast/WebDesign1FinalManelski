@@ -92,9 +92,10 @@ header{
 
 #faqNav{
   background-color: orange;
-  width: 25%;
+  width: 24%;
   float: left;
-  height: 500px;
+  height: 40em;
+  border-right: .5em solid lightgrey;
 }
 
 #faqList ul{
@@ -103,7 +104,9 @@ header{
   background-color: purple;
   list-style-type: none;
   height: 450px;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  line-height: 10vh;
 }
 
 #faqBody{
