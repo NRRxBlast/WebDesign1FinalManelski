@@ -92,13 +92,21 @@ header{
 
 #faqNav{
   background-color: purple;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  width: 25%;
+  h
+}
+#faqList{
+  display: block;
+  width: 25%;
+  
 }
 
 #faqBody{
   
   display: block;
+  width: 75%;
+  float: right;
   text-align: center;
   background-color: yellow;
  
