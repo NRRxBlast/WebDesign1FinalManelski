@@ -41,7 +41,7 @@ a{
 }
 body{
   display: grid;
-  grid-template-columns: repeat(12, auto);
+  grid-template: repeat(4, auto) / repeat(12, auto);
 }
 header{
   grid-column: 1 / span 12;
@@ -111,10 +111,11 @@ header{
   line-height: 10vh
 }
 .navigation{
-  grid-column: 1 / span 3;
+  grid-column: span 4;
+  grid-row: 2;
 }
 .content{
-  grid-column: 4/ span 9;
+  grid-column: span 5;
 }
 #contentMain{
   display: flex;
@@ -145,7 +146,7 @@ header{
 
 footer{
   grid-column: 1 / span 12;
-  grid-row: 3;
+  grid-row: 4;
   
 }
 #footer{
