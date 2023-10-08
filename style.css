@@ -43,10 +43,11 @@ body{
   display: grid;
   grid-template: repeat(5, auto) / repeat(12, 1fr);
   margin: 0;
+  background-color: lightgrey;
 }
 header{
   grid-column: 1 / span 12;
-  border-bottom: .5em solid lightgrey;
+  border-bottom: .5em solid darkgrey;
   
   
 }
@@ -72,6 +73,7 @@ header{
 }
 #logo{
   width: 15vh;
+  padding: 5px;
   
 }
 #innerNav ul li{
@@ -120,14 +122,14 @@ header{
   flex-direction: column;
   align-items: center;
   color: black;
-  border-right: .5em solid lightgrey;
+  border-right: .5em solid darkgrey;
 }
 
 .navigation a{
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 1.2em;
-  border-bottom: .3em solid lightgrey;
+  border-bottom: .3em solid darkgrey;
   border-radius: 10px;
   line-height: 1.5;
 }
@@ -152,5 +154,5 @@ footer{
 #footer{
   display: flex;
   justify-content: center;
-  background-color: lightgrey;
+  background-color: darkgrey;
 }
