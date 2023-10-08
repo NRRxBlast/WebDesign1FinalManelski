@@ -110,7 +110,7 @@ header{
   overflow: hidden;
 }
 #faqList ul li{
-  border-bottom: .5em solid lightgrey;
+  border-bottom: .3em solid lightgrey;
   border-radius: 10px;
   
 }

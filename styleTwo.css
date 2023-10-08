@@ -45,8 +45,7 @@ body{
 }
 header{
   grid-column: 1 / span 12;
-  grid-row: 1;
-  background-color: pink;
+  border-bottom: .5em solid lightgrey;
   
 }
 #navi{
@@ -59,7 +58,6 @@ header{
   color: white;
   display: flex;
   justify-content: space-around;
-  background-color: purple;
   width: 25vw;
 }
 #innerNav{
@@ -101,36 +99,23 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  background-color: blue;
   color: black;
-  border-right: 5px solid grey;
+  border-right: .5em solid lightgrey;
 }
+
 .navigation a{
-  border-bottom: 5px solid grey;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  border-bottom: .3em solid lightgrey;
+  border-radius: 10px;
+  line-height: 1.5;
 }
 .content{
   grid-column: span 12;
   grid-row: 2 / span 3;
   
 }
-#contentNav{
-  
-  
-  background-color: purple;
-  
-}
-.navigation ul{
-  list-style:none;
-  display: flex;
-  flex-direction: column;
-  justify-items: space-around;
-  
-  
-  background-color: orange;
-  
-}
-
 
 #contentMain{
   display: flex;
@@ -138,24 +123,41 @@ header{
   
   
   text-align: center;
-  background-color: green;
+  
   
   
   
 }
 
 #faqNav{
-  background-color: purple;
-  display: block;
-  
+  width: 20vh;
+  float: left;
+  height: 100vh;
+  border-right: .5em solid lightgrey;
+}
 
+#faqList ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  line-height: 6vh;
+  overflow: hidden;
+}
+#faqList ul li{
+  border-bottom: .3em solid lightgrey;
+  border-radius: 10px;
+  
 }
 
 #faqBody{
   
   display: block;
+  width: 75%;
+  float: right;
   text-align: center;
-  background-color: yellow;
  
 }
 
@@ -170,6 +172,6 @@ footer{
   margin-top: auto;
   justify-content: center;
   
-  background-color: darkgrey;
+  background-color: lightgrey;
   width: 100%;
 }
