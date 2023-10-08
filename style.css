@@ -94,11 +94,24 @@ header{
   color: red;
 
 }
-.indexMain{
-  grid-column: 1/ span 12;
-  grid-row: 2;
+
+#homeBody{
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  align-content: stretch;
+  width: 100%;
+  
 }
+#homeBody img{
+  width: 50%;
+  height: 10vh;
+  align-self: center;
+  background-color: lightblue;
+}
+
 
 .navigation{
   grid-row: 2 / span 3;
