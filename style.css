@@ -104,8 +104,10 @@ header{
   
 }
 #homeBody ul{
-  list-style-position: inside;
-  text-align: center;
+  text-align: left;
+  margin-left: 40%;
+  margi-right: 40%;
+  font-size: 2vw;
   
 }
 #homeBody img{
