@@ -41,10 +41,13 @@ a{
 }
 body{
   display: grid;
-  grid-template: repeat(5, auto) / repeat(12, auto);
+  grid-template: repeat(5, auto) / repeat(12, 1fr);
+  
+  gap: 5px;
 }
 header{
-  grid-column: span 12;
+  grid-column: 1 / span 12;
+  grid-row: 1;
   background-color: pink;
   
 }
@@ -95,8 +98,14 @@ header{
 }
 
 .navigation{
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 4;
+  
+}
+.content{
+  grid-column: 12 / span 6;
+  grid-row: 2 / span 3;
+  
 }
 #contentNav{
   background-color: blue;
@@ -115,10 +124,7 @@ header{
   line-height: 10vh
 }
 
-.content{
-  grid-column: 1;
-  grid-row: 3;
-}
+
 #contentMain{
   display: flex;
   flex-direction: column;
@@ -148,7 +154,7 @@ header{
 
 footer{
   grid-column: 1 / span 12;
-  grid-row: 4;
+  grid-row: 5;
   
 }
 #footer{
