@@ -5,7 +5,7 @@ html {
 
 h1 {
 	font-size: 3.2em;
-	font-weight: 700;
+	
 }
 
 h2 {
@@ -41,10 +41,10 @@ a{
 }
 body{
   display: grid;
-  grid-template: repeat(4, auto) / repeat(12, auto);
+  grid-template: repeat(5, auto) / repeat(12, auto);
 }
 header{
-  grid-column: 1 / span 12;
+  grid-column: span 12;
   background-color: pink;
   
 }
@@ -94,11 +94,15 @@ header{
 
 }
 
+.navigation{
+  grid-column: 2;
+  grid-row: 3;
+}
 #contentNav{
   background-color: blue;
   display: flex;
   
-  min-height: 75vh;
+  
   
 }
 #contentNav ul{
@@ -110,12 +114,10 @@ header{
   margin-right: 3vh;
   line-height: 10vh
 }
-.navigation{
-  grid-column: span 4;
-  grid-row: 2;
-}
+
 .content{
-  grid-column: span 5;
+  grid-column: 1;
+  grid-row: 3;
 }
 #contentMain{
   display: flex;
