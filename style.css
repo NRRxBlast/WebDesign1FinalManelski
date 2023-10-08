@@ -5,7 +5,7 @@ html {
 
 h1 {
 	font-size: 3.2em;
-	font-weight: 700;
+	
 }
 
 h2 {
@@ -41,11 +41,13 @@ a{
 }
 body{
   display: grid;
-  grid-template-columns: repeat(12, auto);
+  grid-template: repeat(5, auto) / repeat(12, 1fr);
+  margin: 0;
 }
 header{
   grid-column: 1 / span 12;
-  background-color: pink;
+  border-bottom: .5em solid lightgrey;
+  
   
 }
 #navi{
@@ -58,7 +60,6 @@ header{
   color: white;
   display: flex;
   justify-content: space-around;
-  background-color: purple;
   width: 25vw;
 }
 #innerNav{
@@ -98,55 +99,45 @@ header{
   grid-row: 2;
   min-height: 100vh;
 }
-#homeBody{
+
+.navigation{
+  grid-row: 2 / span 3;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background-color: lightgrey;
-  align-content: stretch;
-  width: 100%;
-  
-}
-#homeBody img{
-  width: 50%;
-  height: 10vh;
-  align-self: center;
-  background-color: lightblue;
+  align-items: center;
+  color: black;
+  border-right: .5em solid lightgrey;
 }
 
-#contentNav{
-  background-color: blue;
-  
-  min-height: 75vh;
-  
+.navigation a{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  border-bottom: .3em solid lightgrey;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+.content{
+  grid-column: span 12;
+  grid-row: 2 / span 3;
   
 }
-#contentNav ul{
-  list-style:none;
-}
-.contentBody{
-  display: grid;
-  grid-template-columns: repeat(12, auto);
-}
+
 #contentMain{
-  grid-column: / span 8;
+  text-align: center; 
+}
+#faqBody{
   text-align: center;
-  background-color: green;
-  min-height: 75vh;
-  
 }
 
 footer{
   grid-column: 1 / span 12;
-  grid-row: 3;
+  grid-row: 5;
   
 }
 #footer{
- 
   display: flex;
-  margin-top: auto;
   justify-content: center;
-  
-  background-color: darkgrey;
-  width: 100%;
+  background-color: lightgrey;
 }
