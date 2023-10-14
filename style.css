@@ -201,7 +201,28 @@ footer{
   background-color: lightgrey;
 }
 
-.contentTypography{
-  display: block;
-  margin: 5px;
+#contentTypography{
+  display: grid;
+  margin: 5vh;
+  grid-template-columns: 2fr 1fr;
 }
+#typoInfo{
+  grid-column: 2;
+}
+#contentButtons{
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#contentButtons button{
+  margin: 30px;
+  width: 20%;
+  height: 5vh;
+  border-radius: 5px;
+  flex-direction: row;
+  color: black;
+  background-color: lightgrey;
+}
+
