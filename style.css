@@ -243,11 +243,11 @@ footer{
   display: block;
   
 }
-#contentPageLayout{
+#contentPageLayout, #ContentItemLayout{
   display: flex;
   
   margin: 10px 5%;
-  
+  justify-content: center;
   width: 90%;
   border: 5px solid black;
   
@@ -256,9 +256,10 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 70%;
+  margin: 10px;
   
-  margin: 0 100px;
-  background-color: purple;
+  
 }
 #contentPage div{
   background-color: darkgrey;
@@ -266,4 +267,5 @@ footer{
   padding: 4vh;
   width: 5vh;
   height: 5vh;
+  
 }
