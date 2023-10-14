@@ -1,4 +1,4 @@
-let getClick, setClick
+let getClick, setClick;
 
 function homePage(){
   window.location.href="index.html";
@@ -6,12 +6,12 @@ function homePage(){
 function contentPage(){
   
   window.location.href="content.html";
-  getClick = 
+  changeDisplay();
   
 }
 function faqPage(){
   window.location.href="faq.html";
 }
 function changeDisplay(){
-  window.getElementById("contentColorsPatterns").style.display = "none";
+  document.getElementById("contentColorsPatterns").style.display = "none";
 }
