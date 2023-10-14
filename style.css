@@ -240,7 +240,21 @@ footer{
   border: 3px solid;
 }
 #contentLayout{
-  display: flex;
+  display: block;
   
 }
-
+#contentPageLayout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 5%;
+  
+  width: 90%;
+  border: 5px solid black;
+  
+}
+#contentPageLayout div{
+  background-color: darkgrey;
+  margin: 10px 30px;
+  padding: 7vh;
+}
