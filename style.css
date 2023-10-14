@@ -269,3 +269,27 @@ footer{
   height: 5vh;
   
 }
+#contentItemLayout{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5%;
+  
+  width: 90%;
+  border: 5px solid black;
+}
+#contentItemLayout button{
+  margin: 5px 15px;
+  width: 20%;
+  height: 5vh;
+  border-radius: 5px;
+  flex-direction: row;
+  color: black;
+  background-color: transparent;
+  
+}
+#contentItemLayout img{
+  margin: 40% 10px;
+  width: 30vh;
+  height: 30vh;
+}
+

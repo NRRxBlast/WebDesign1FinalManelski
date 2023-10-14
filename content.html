@@ -31,11 +31,10 @@
       </div>
     </header>
     <nav class ="navigation">
-      <a style="z-index">Colors/Patterns</a>
-      <a id="two">typography</a>
+      <a id="one" onclick="changeTab(1);">Colors/Patterns</a>
+      <a id="two" onclick="changeTab(2);">typography</a>
       <a id="three">Buttons</a>
-      <a id="four">Layouts</a>
-      <a id="five">Tiles</a> 
+      <a id="four">Layouts</a> 
     </nav>
     <main class="content">
       <div id="contentColorsPatterns" style="display: none;">
@@ -99,15 +98,21 @@
           </div>
         </div>
         <h1 style="margin: 10px 5%;">Selected Item Layout</h1>
-        <div id="ContentItemLayout">
-          <img  src="https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/images.png?        v=1695421976844">
-          <h3>Header</h3>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco             laboris nisi ut aliquip ex ea commodo consequat. 
-        </p>
-        <button>Next</button>
-        <button>Previous</button>
+        <div id="contentItemLayout">
+          <div>
+            <img  src="https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/images.png?        v=1695421976844">
+          </div>
+          
+          <div>
+            <h3>Header</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco             laboris nisi ut aliquip ex ea commodo consequat. 
+          </p>
+          <button>Next</button>
+          <button>Previous</button>
+          </div>
         </div>
+          
       <div id="contentTabs" style="display: none;">
         <div class="tab">
           
@@ -134,5 +139,10 @@
       </div>
     </footer>
   </body>
-  
+  <script>
+    function changeTab(tab){
+      
+    }
+    
+  </script>
 </html>
