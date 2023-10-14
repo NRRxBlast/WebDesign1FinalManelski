@@ -245,16 +245,25 @@ footer{
 }
 #contentPageLayout{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  
   margin: 10px 5%;
   
   width: 90%;
   border: 5px solid black;
   
 }
-#contentPageLayout div{
+#contentPage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  margin: 0 100px;
+  background-color: purple;
+}
+#contentPage div{
   background-color: darkgrey;
-  margin: 10px 30px;
-  padding: 7vh;
+  margin: 2vh 2vh;
+  padding: 4vh;
+  width: 5vh;
+  height: 5vh;
 }
