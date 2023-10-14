@@ -1,4 +1,4 @@
-let getClick, setClick;
+let getClick = 1, setClick;
 
 function homePage(){
   window.location.href="index.html";
@@ -15,7 +15,6 @@ function faqPage(){
 function setDisplay(disp){
   if(disp == 1){
     setClick = localStorage.setItem("value", 1);
-    
   }
   else if(disp == 2){
     setClick = localStorage.setItem("value", 2);
@@ -54,4 +53,32 @@ function getDisplay(){
     document.getElementById("contentButtons").style.display = "none";
     document.getElementById("contentLayout").style.display = "block";
   }
+  localStorage.setItem("value", 1);
 }
+
+ function changeTab(tab){
+      if(tab == 1){
+        document.getElementById("contentColorsPatterns").style.display = "flex";
+        document.getElementById("contentTypography").style.display = "none";
+        document.getElementById("contentButtons").style.display = "none";
+        document.getElementById("contentLayout").style.display = "none";
+      }
+      else if(tab == 2){
+        document.getElementById("contentColorsPatterns").style.display = "none";
+        document.getElementById("contentTypography").style.display = "grid";
+        document.getElementById("contentButtons").style.display = "none";
+        document.getElementById("contentLayout").style.display = "none";
+      }
+      else if(tab == 3){
+        document.getElementById("contentColorsPatterns").style.display = "none";
+        document.getElementById("contentTypography").style.display = "none";
+        document.getElementById("contentButtons").style.display = "flex";
+        document.getElementById("contentLayout").style.display = "none";
+      }
+      else if(tab == 4){
+        document.getElementById("contentColorsPatterns").style.display = "none";
+        document.getElementById("contentTypography").style.display = "none";
+        document.getElementById("contentButtons").style.display = "none";
+        document.getElementById("contentLayout").style.display = "block";
+      }
+    }
