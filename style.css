@@ -165,6 +165,21 @@ footer{
 
 
 /*This begins css for different sections of the content.html section*/
+#contentColorsPatterns{
+  display: flex;
+  flex-wrap: wrap;
+}
 .colorTab{
+  width: 25vh;
+  height: 25vh;
+  background-color: black;
+  color: white;
+  text-align: center;
   
+  margin: 50px 10px 10px 10px;
+}
+#color1{
+  
+  bottom: 0;
+  background-color: red;
 }
