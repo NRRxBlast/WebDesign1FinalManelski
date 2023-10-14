@@ -24,7 +24,7 @@
           
           <ul>
             <li><a href="index.html" id="headHome">Home</a></li>
-            <li><a href="content.html" id="headContent">Content</a></li>
+            <li><a onclick="contentPage();" id="headContent">Content</a></li>
             <li><a href="faq.html" id="headFaq">FAQ</a></li>
           </ul>
         </div>
@@ -73,17 +73,8 @@
     </div>
     </footer>
   </body>
-  <script>
-    homePage(){
-      window.location.href="index.html";
-    }
-    contentPage(){
-      window.location.href="content.html";
-      
-    }
-    faqPage(){
-      window.location.href="faq.html";
-    }
+  <script defer src="script.js">
+   
   </script>
   
 </html>
