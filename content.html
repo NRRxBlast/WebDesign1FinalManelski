@@ -33,11 +33,11 @@
     <nav class ="navigation">
       <a id="one" onclick="changeTab(1);">Colors/Patterns</a>
       <a id="two" onclick="changeTab(2);">typography</a>
-      <a id="three">Buttons</a>
-      <a id="four">Layouts</a> 
+      <a id="three" onclick="changeTab(3);">Buttons</a>
+      <a id="four" onclick="changeTab(4);">Layouts</a> 
     </nav>
     <main class="content">
-      <div id="contentColorsPatterns" style="display: none;">
+      <div id="contentColorsPatterns" >
         <div class="colorTab" id="color1">
           <p>Color 1<br>Hex: #FF0000</p>
         </div>
@@ -81,7 +81,7 @@
         </div>
         
       </div>
-      <div id="contentLayout" >
+      <div id="contentLayout" style="display: none;">
         <h1 style="margin: 10px 5%;">Main Navigation Page Layout</h1>
         <div id="contentPageLayout">
           <div id="contentPage">
@@ -112,6 +112,7 @@
           <button>Previous</button>
           </div>
         </div>
+      </div>
           
       <div id="contentTabs" style="display: none;">
         <div class="tab">
@@ -141,7 +142,30 @@
   </body>
   <script>
     function changeTab(tab){
-      
+      if(tab == 1){
+        document.getElementById("contentColorsPatterns").style.display = "flex";
+        document.getElementById("contentTypography").style.display = "none";
+        document.getElementById("contentButtons").style.display = "none";
+        document.getElementById("contentButtons").style.display = "none";
+      }
+      else if(tab == 2){
+        document.getElementById("contentColorsPatterns").style.display = "none";
+        document.getElementById("contentTypography").style.display = "grid";
+        document.getElementById("contentButtons").style.display = "none";
+        document.getElementById("contentLayout").style.display = "none";
+      }
+      else if(tab == 3){
+        document.getElementById("contentColorsPatterns").style.display = "none";
+        document.getElementById("contentTypography").style.display = "none";
+        document.getElementById("contentButtons").style.display = "block";
+        document.getElementById("contentLayout").style.display = "none";
+      }
+      else if(tab == 4){
+        document.getElementById("contentColorsPatterns").style.display = "none";
+        document.getElementById("contentTypography").style.display = "none";
+        document.getElementById("contentButtons").style.display = "none";
+        document.getElementById("contentLayout").style.display = "block";
+      }
     }
     
   </script>
