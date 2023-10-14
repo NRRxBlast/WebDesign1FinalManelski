@@ -33,6 +33,9 @@ p {
 	font-size: 2vw;
 	line-height: 2;
 }
+a:hover{
+  cursor: pointer;
+}
 
 
 body{
@@ -40,6 +43,7 @@ body{
   grid-template: repeat(5, auto) / repeat(12, 1fr);
   margin: 0;
   background-color: lightgrey;
+  
 }
 header{
   grid-column: 1 / span 12;
@@ -162,6 +166,11 @@ footer{
   justify-content: center;
   background-color: darkgrey;
 }
+main{
+  min-height: 100vh;
+  
+}
+
 
 
 /*This begins css for different sections of the content.html section*/
