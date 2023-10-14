@@ -214,7 +214,13 @@ footer{
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+#contentButtons div{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  
 }
 #contentButtons button{
   margin: 30px;
@@ -223,10 +229,18 @@ footer{
   border-radius: 5px;
   flex-direction: row;
   color: black;
-  background-color: lightgrey;
+  background-color: transparent;
+}
+#contentButtons p{
+  margin: 10px;
 }
 #contentButtons img{
+  
   border-radius: 5px;
   border: 3px solid;
+}
+#contentLayout{
+  display: flex;
+  
 }
 
