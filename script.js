@@ -25,6 +25,10 @@ function setDisplay(disp){
   else if(disp == 4){
     setClick = localStorage.setItem("value", 4);
   }
+  else if(disp == 5){
+    setClick = localStorage.setItem("value", 5);
+  }
+  
 }
 function getDisplay(){
   getClick = localStorage.getItem("value");
@@ -52,6 +56,9 @@ function getDisplay(){
     document.getElementById("contentTypography").style.display = "none";
     document.getElementById("contentButtons").style.display = "none";
     document.getElementById("contentLayout").style.display = "block";
+  }
+  else if(getClick == 5){
+    alert("Sorry, this feature is not yet ready. Come back in the future!");
   }
   localStorage.setItem("value", 1);
 }
@@ -82,3 +89,6 @@ function getDisplay(){
         document.getElementById("contentLayout").style.display = "block";
       }
     }
+function faqAlert(){
+  alert("Sorry, this feature is not yet ready. Come back in the future!");
+}

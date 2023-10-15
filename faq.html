@@ -32,8 +32,9 @@
     </header>
     <nav class="navigation">
       <a>About</a>
-      <a onclick="faqTab();">Q&A</a>
-      <a onclick="faqTab();">Designers</a>
+      <a onclick="faqAlert();">Q&A</a>
+      <a onclick="faqAlert();">Designers</a>
+      <a onclick="faqAlert();">Designers</a>
     </nav>
     <main class="content">
       <div id="faqBody">
@@ -47,18 +48,29 @@
       
     </main>
     <footer>
+      
     <div id="footer">
-      <p>
-        footer n what not
-      </p>
+      <div id="footerHome"><a href="index.html" style="color: black;">Home</a>
+        
+      </div>
+      <div id="footerContent"><a href="content.html" style="color: black;">Content</a>      
+        <a href="content.html" onclick="setDisplay(1);">Colors/Patterns</a>
+        <a href="content.html" onclick="setDisplay(2);">typography</a>
+        <a href="content.html" onclick="setDisplay(3);">Buttons</a>
+        <a href="content.html" onclick="setDisplay(4);">Layouts</a>
+      </div>
+      <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
+        <a href="faq.html">About</a>
+        <a href="faq.html" onclick="setDisplay(5);">Q&A</a>
+        <a href="faq.html" onclick="setDisplay(5);">Designers</a>
+        <a onclick="faqAlert();">Designers</a>
+      </div>
+      
     </div>
     </footer>
   </body>
-  <script>
-    function faqTab(){
-      alert("Sorry, this feature is not yet ready. Come back in the future!");
-
-    }
+  <script defer src="script.js;">
+    
   
   </script>
 </html>
