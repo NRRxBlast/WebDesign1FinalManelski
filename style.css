@@ -110,7 +110,7 @@ header{
 #homeBody ul{
   text-align: left;
   margin-left: 40%;
-  margi-right: 40%;
+  margin-right: 40%;
   font-size: 2vw;
   
 }
@@ -159,18 +159,24 @@ header{
 footer{
   grid-column: 1 / span 12;
   grid-row: 5;
-  display: inline;
+  
   
 }
 #footerContent, #footerFaq, #footerHome{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin: 15px;
-  height: 100px;
+  margin: 30px;
+  padding: 0 5% 0 5%;
+  
 }
-#footerContent, #footerFaq, #footerHome div{
-  margin: 5px;
+#footer div{
+  color: black;
+}
+footer a{
+  font-style: normal;
+  text-decoration: none;
+  color: white;
 }
 #footer{
   display: flex;
