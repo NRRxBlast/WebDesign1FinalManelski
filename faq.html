@@ -16,6 +16,7 @@
   </head>
   
   <body>
+    <!--This is the header for the page. Each file has the same4 repeating header-->
     <header>
       <div id="navi">
         <img id="logo" src= "https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/webFinalLogo2.png?v=1696740538836">
@@ -30,12 +31,14 @@
         </div>
       </div>
     </header>
+     <!--Main list navigation on left side of screen. Lays out navigation tabs to go between the site.    Only the "About" is active.-->
     <nav class="navigation">
       <a>About</a>
       <a onclick="faqAlert();">Q&A</a>
       <a onclick="faqAlert();">Designers</a>
       
     </nav>
+    <!--Main body displaying information on the page-->
     <main class="content">
       <div id="faqBody">
         <h1>Welcome</h1>
@@ -47,6 +50,7 @@
       </div>
       
     </main>
+    <!--Footer section for navigating beteween pages from the bottom. This is the same on each html page-->
     <footer>
       
     <div id="footer">
@@ -61,8 +65,8 @@
       </div>
       <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
         <a href="faq.html">About</a>
-        <a href="faq.html" onclick="setDisplay(5);">Q&A</a>
-        <a href="faq.html" onclick="setDisplay(5);">Designers</a>
+        <a onclick="faqAlert();">Q&A</a>
+        <a onclick="faqAlert();">Designers</a>
       </div>
       
     </div>

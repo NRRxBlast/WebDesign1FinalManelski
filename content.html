@@ -16,6 +16,7 @@
   </head>
   
   <body onload="getDisplay();">
+    <!--This is the header for the page. Each file has the same4 repeating header-->
     <header>
       <div id="navi">
         <img id="logo" src= "https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/webFinalLogo2.png?v=1696740538836">
@@ -30,13 +31,16 @@
         </div>
       </div>
     </header>
+    <!--Main list navigation on left side of screen. Lays out navigation tabs to go between the site-->
     <nav class ="navigation">
       <a id="one" onclick="changeTab(1);">Colors/Patterns</a>
       <a id="two" onclick="changeTab(2);">typography</a>
       <a id="three" onclick="changeTab(3);">Buttons</a>
       <a id="four" onclick="changeTab(4);">Layouts</a> 
     </nav>
+    <!--Main body displaying information on the page. -->
     <main class="content">
+      <!--Div below containing section for the colors-->
       <div id="contentColorsPatterns" style="display: none;">
         <div class="colorTab" id="color1">
           <p>Color 1<br>Hex: #FF0000</p>
@@ -131,7 +135,7 @@
       </div>
       
     </main>
-    
+     <!--Footer section for navigating beteween pages from the bottom. This is the same on each html page-->
     <footer>
       
     <div id="footer">
@@ -146,8 +150,8 @@
       </div>
       <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
         <a href="faq.html">About</a>
-        <a href="faq.html" onclick="setDisplay(5);">Q&A</a>
-        <a href="faq.html" onclick="setDisplay(5);">Designers</a>
+        <a onclick="faqAlert();">Q&A</a>
+        <a onclick="faqAlert();">Designers</a>
       </div>
       
     </div>

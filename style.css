@@ -42,12 +42,13 @@ body{
   display: grid;
   grid-template: repeat(5, auto) / repeat(12, 1fr);
   margin: 0;
-  background-color: lightgrey;
+  
   
 }
 header{
   grid-column: 1 / span 12;
   border-bottom: .5em solid darkgrey;
+  background-color: lightgrey;
 }
 #navi{
   display: flex;
