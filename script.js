@@ -58,6 +58,7 @@ function getDisplay(){
     document.getElementById("contentLayout").style.display = "block";
   }
   else if(getClick == 5){
+    faqAlert();
     alert("Sorry, this feature is not yet ready. Come back in the future!");
   }
   localStorage.setItem("value", 1);
