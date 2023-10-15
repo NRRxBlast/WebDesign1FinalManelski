@@ -165,16 +165,16 @@ footer{
 #footerContent, #footerFaq, #footerHome{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 15px;
-  max-height: 15vh;
+  height: 100px;
 }
 #footerContent, #footerFaq, #footerHome div{
   margin: 5px;
 }
 #footer{
   display: flex;
-  justify-content: center;
+  
   background-color: darkgrey;
 }
 main{
