@@ -22,7 +22,6 @@
         <img id="logo" src= "https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/webFinalLogo2.png?v=1696740538836">
         <div id="innerNav">
           <h3>Cubing Teacher</h3>
-          
           <ul>
             <li><a href="index.html" id="headHome">Home</a></li>
             <li><a href="content.html" id="headContent">Content</a></li>
@@ -31,6 +30,7 @@
         </div>
       </div>
     </header>
+    
     <!--Main body displaying information on the page-->
     <main class="content">
       <div id="homeBody">
@@ -48,34 +48,31 @@
           <li>Typography</li>
           <li>Buttons</li>
           <li>Layouts</li>
-          
         </ul>
         <p>
           Along with the above, we will also provide more info in our <a class="textLink" href="faq.html">FAQ</a> section.<br><br>We thank you for taking the time of viewing the page and hope you enjoy the behind the scenes of Cubing Teacher!
         </p>
       </div>
-      
     </main>
+    
      <!--Footer section for navigating beteween pages from the bottom. This is the same on each html page-->
     <footer>
-      
-    <div id="footer">
-      <div id="footerHome"><a href="index.html" style="color: black;">Home</a>
-        
+      <div id="footer">
+        <div id="footerHome">
+          <a href="index.html" style="color: black;">Home</a>
+        </div>
+        <div id="footerContent"><a href="content.html" style="color: black;">Content</a>      
+          <a href="content.html" onclick="setDisplay(1);">Colors/Patterns</a>
+          <a href="content.html" onclick="setDisplay(2);">typography</a>
+          <a href="content.html" onclick="setDisplay(3);">Buttons</a>
+          <a href="content.html" onclick="setDisplay(4);">Layouts</a>
+        </div>
+        <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
+          <a href="faq.html">About</a>
+          <a onclick="faqAlert();">Q&A</a>
+          <a onclick="faqAlert();">Designers</a>
+        </div>
       </div>
-      <div id="footerContent"><a href="content.html" style="color: black;">Content</a>      
-        <a href="content.html" onclick="setDisplay(1);">Colors/Patterns</a>
-        <a href="content.html" onclick="setDisplay(2);">typography</a>
-        <a href="content.html" onclick="setDisplay(3);">Buttons</a>
-        <a href="content.html" onclick="setDisplay(4);">Layouts</a>
-      </div>
-      <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
-        <a href="faq.html">About</a>
-        <a onclick="faqAlert();">Q&A</a>
-        <a onclick="faqAlert();">Designers</a>
-      </div>
-      
-    </div>
     </footer>
   </body>
   <script defer src="script.js">

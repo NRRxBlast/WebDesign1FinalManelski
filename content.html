@@ -38,9 +38,10 @@
       <a id="three" onclick="changeTab(3);">Buttons</a>
       <a id="four" onclick="changeTab(4);">Layouts</a> 
     </nav>
+    
     <!--Main body displaying information on the page. -->
     <main class="content">
-      <!--Div below containing section for the colors-->
+      <!--Div below containing section for the colors/patterns section.-->
       <div id="contentColorsPatterns" style="display: none;">
         <div class="colorTab" id="color1">
           <p>Color 1<br>Hex: #FF0000</p>
@@ -58,6 +59,8 @@
           <p>Color 5<br>Hex: #D3D3D3</p>
         </div>
       </div>
+      
+      <!--Div below containing typography section information-->
       <div id="contentTypography" style="display: none;">
         <div>
           <h1>Heading 1</h1>
@@ -66,10 +69,10 @@
         </div>
         <div>
           <p id="typoInfo">Font Style: </p>
-        </div>
-        
-        
+        </div>  
       </div>
+      
+      <!--Div containing section for button inforamtion-->
       <div id="contentButtons" style="display: none;">
         <div>
           <button>Submit</button>
@@ -78,14 +81,15 @@
             The buttons will have no color background.
           </p>
         </div>
-        
         <div id="contentImage" >
           <img  src="https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/images.png?        v=1695421976844">
           <p id="caption" style="text-align: center;">This image above will be clickable<br>(Mainly for navigation)</p>
         </div>
-        
       </div>
+      
+      <!--Div containing layour section information-->
       <div id="contentLayout" style="display: none;">
+        <!--Layout One-->
         <h1 style="margin: 10px 5%;">Main Navigation Page Layout</h1>
         <div id="contentPageLayout">
           <div id="contentPage">
@@ -101,12 +105,12 @@
             <div>etc...</div>
           </div>
         </div>
+        <!--Layout Two-->
         <h1 style="margin: 10px 5%;">Selected Item Layout</h1>
         <div id="contentItemLayout">
           <div>
             <img  src="https://cdn.glitch.global/fd4441a1-ffb9-4ce6-b239-ed76618c7b07/images.png?        v=1695421976844">
           </div>
-          
           <div>
             <h3>Header</h3>
             <p>
@@ -117,44 +121,25 @@
           </div>
         </div>
       </div>
-          
-      <div id="contentTabs" style="display: none;">
-        <div class="tab">
-          
-        </div>
-      </div>
-      <div id="contentMain" style="display: none;">
-        <h1 id="selectedContent">Selected Content</h1>
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      
     </main>
      <!--Footer section for navigating beteween pages from the bottom. This is the same on each html page-->
     <footer>
-      
-    <div id="footer">
-      <div id="footerHome"><a href="index.html" style="color: black;">Home</a>
-        
+      <div id="footer">
+        <div id="footerHome">
+          <a href="index.html" style="color: black;">Home</a>
+        </div>
+        <div id="footerContent"><a href="content.html" style="color: black;">Content</a>      
+          <a href="content.html" onclick="setDisplay(1);">Colors/Patterns</a>
+          <a href="content.html" onclick="setDisplay(2);">typography</a>
+          <a href="content.html" onclick="setDisplay(3);">Buttons</a>
+          <a href="content.html" onclick="setDisplay(4);">Layouts</a>
+        </div>
+        <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
+          <a href="faq.html">About</a>
+          <a onclick="faqAlert();">Q&A</a>
+          <a onclick="faqAlert();">Designers</a>
+        </div>
       </div>
-      <div id="footerContent"><a href="content.html" style="color: black;">Content</a>      
-        <a href="content.html" onclick="setDisplay(1);">Colors/Patterns</a>
-        <a href="content.html" onclick="setDisplay(2);">typography</a>
-        <a href="content.html" onclick="setDisplay(3);">Buttons</a>
-        <a href="content.html" onclick="setDisplay(4);">Layouts</a>
-      </div>
-      <div id="footerFaq"><a href="faq.html" style="color: black;">FAQ</a>
-        <a href="faq.html">About</a>
-        <a onclick="faqAlert();">Q&A</a>
-        <a onclick="faqAlert();">Designers</a>
-      </div>
-      
-    </div>
     </footer>
   </body>
   <script defer src="script.js">
