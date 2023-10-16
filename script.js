@@ -1,17 +1,7 @@
+//Variables (getter and setter)
 let getClick = 1, setClick;
 
-function homePage(){
-  window.location.href="index.html";
-}
-function contentPage(){
-  
-  window.location.href="content.html";
-  
-  
-}
-function faqPage(){
-  window.location.href="faq.html";
-}
+//Sets which display to go to based on the disp parameter. Saves number to local storage.
 function setDisplay(disp){
   if(disp == 1){
     setClick = localStorage.setItem("value", 1);
@@ -30,6 +20,7 @@ function setDisplay(disp){
   }
   
 }
+//Gets local storage numnber to properly ensure that the correct tab is currently being displayed by adjusting the css display values based on local storage value.
 function getDisplay(){
   getClick = localStorage.getItem("value");
   if(getClick == 1){
@@ -61,7 +52,8 @@ function getDisplay(){
   localStorage.setItem("value", 1);
 }
 
- function changeTab(tab){
+//Changes selected tab within navigation on html pages using the tab parameter. Code adjusts the css display style.
+function changeTab(tab){
       if(tab == 1){
         document.getElementById("contentColorsPatterns").style.display = "flex";
         document.getElementById("contentTypography").style.display = "none";
@@ -87,6 +79,8 @@ function getDisplay(){
         document.getElementById("contentLayout").style.display = "block";
       }
     }
+
+//Alerts the user that the feature is not yet ready.
 function faqAlert(){
   alert("Sorry, this feature is not yet ready. Come back in the future!");
 }

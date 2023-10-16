@@ -34,7 +34,7 @@ header{
   border-bottom: .5em solid darkgrey;
   background-color: lightgrey;
 }
-/*Css for header. Poor naming conventions 
+/*Css for header (FYI poor naming conventions)*/ 
 #navi{
   display: flex;
   flex-direction: row;
@@ -73,6 +73,7 @@ header{
   color: black;
 }
 
+/*Header navigation hover to change colors*/
 #headHome:hover{
   color: green;
 
@@ -86,6 +87,7 @@ header{
 
 }
 
+/*Home Page main body*/
 #homeBody{
   min-height: 100vh;
   display: flex;
@@ -107,7 +109,7 @@ header{
   background-color: lightblue;
 }
 
-
+/*Main navigation and body layout classes (Both for content.html and faq.html)*/
 .navigation{
   grid-row: 2 / span 3;
   width: 200px;
@@ -142,6 +144,12 @@ header{
   text-align: center;
 }
 
+main{
+  min-height: 100vh;
+  
+}
+
+/*Footer information for formatting*/
 footer{
   grid-column: 1 / span 12;
   grid-row: 5;
@@ -169,14 +177,11 @@ footer a{
   
   background-color: darkgrey;
 }
-main{
-  min-height: 100vh;
-  
-}
 
 
 
 /*This begins css for different sections of the content.html section*/
+/*Content Color/pattern tab css*/
 #contentColorsPatterns{
   display: flex;
   flex-wrap: wrap;
@@ -213,6 +218,7 @@ main{
   background-color: lightgrey;
 }
 
+/*Content typography tab css*/
 #contentTypography{
   display: grid;
   margin: 5vh;
@@ -221,6 +227,8 @@ main{
 #typoInfo{
   grid-column: 2;
 }
+
+/*content button tab css*/
 #contentButtons{
   
   align-items: center;
@@ -251,6 +259,7 @@ main{
   border-radius: 5px;
   border: 3px solid;
 }
+/*content layout tab css*/
 #contentLayout{
   display: block;
   
